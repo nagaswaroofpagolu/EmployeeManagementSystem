@@ -1,113 +1,188 @@
 # Employee Management System (EMS)
 
-A comprehensive, full-stack Employee Management System designed with a premium, modern user interface. This application provides robust role-based access control, allowing CEOs, HR Managers, and standard Employees to securely manage workforce data, organizational structure, and leave applications.
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Backend-SpringBoot-green?style=for-the-badge&logo=springboot" />
+  <img src="https://img.shields.io/badge/Database-MySQL-orange?style=for-the-badge&logo=mysql" />
+  <img src="https://img.shields.io/badge/Auth-JWT-black?style=for-the-badge&logo=jsonwebtokens" />
+  <img src="https://img.shields.io/badge/Build-Vite-purple?style=for-the-badge&logo=vite" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/yourusername/EmployeeManagementSystem?style=social" />
+  <img src="https://img.shields.io/github/forks/yourusername/EmployeeManagementSystem?style=social" />
+  <img src="https://img.shields.io/github/license/yourusername/EmployeeManagementSystem" />
+</p>
 
 ---
 
-## ✨ Key Features
+# ✨ Employee Management System
 
-- **Role-Based Access Control (RBAC):** Distinct dashboards, views, and permissions automatically tailored for CEOs, HR Managers, and Employees.
-- **Premium UI/UX:** Built with a stunning "Glassmorphism" aesthetic featuring rich gradients, fluid animations, and custom CSS variables.
-- **Dynamic Theming:** Seamlessly toggle between meticulously crafted Light and Dark modes.
-- **Interactive Dashboards:**
-  - **CEO View:** High-level company metrics, recent activity timelines, and live Department Breakdown charts.
-  - **HR View:** Quick-action toolbars, pending task trackers, and detailed headcount overviews.
-  - **Employee View:** Visual leave-balance progress bars, company announcements, and upcoming holiday schedules.
-- **Employee Directory:** View and manage the organization's workforce via beautiful Profile Cards. Admins and HR can instantly update roles, salaries, and departments via inline modals.
-- **Leave Management System:** Employees can apply for leaves, while Admins/HR can review, approve, or reject them. Includes an interactive status filter bar.
+A modern full-stack Employee Management System with secure role-based access, interactive dashboards, leave management, analytics, and premium Glassmorphism UI design. Built using React, Spring Boot, and MySQL for scalable enterprise workforce management.
 
 ---
 
-## 🛠️ Technologies Used
+# 🚀 Tech Stack
 
-### Frontend
-- **React.js (Vite)**: For lightning-fast development and optimized production builds.
-- **React Router**: For seamless client-side routing and protected routes.
-- **Axios**: For structured API requests and JWT token interception.
-- **Recharts**: For rendering beautiful, interactive data visualizations (Pie Charts).
-- **Lucide React**: For crisp, modern SVG iconography.
-- **Vanilla CSS**: Used exclusively for styling to demonstrate advanced CSS Grid, Flexbox, CSS Custom Properties (Variables), and Glassmorphism without relying on external UI frameworks.
-
-### Backend
-- **Spring Boot (Java)**: The robust core framework handling REST API endpoints and business logic.
-- **Spring Data JPA / Hibernate**: For seamless object-relational mapping and database interactions.
-- **MySQL**: The primary relational database for persistent data storage.
+| Technology            | Usage              |
+| --------------------- | ------------------ |
+| ⚛️ React.js (Vite)    | Frontend UI        |
+| ☕ Spring Boot         | Backend REST APIs  |
+| 🗄️ MySQL             | Database           |
+| 🔐 JWT Authentication | Security           |
+| 📊 Recharts           | Data Visualization |
+| 🌐 Axios              | API Communication  |
 
 ---
 
-## 🔐 Default Login Credentials
+# 🖼️ Preview
 
-Upon the very first startup, the backend will automatically seed the database with the following accounts so you can immediately test the role-based features:
-
-| Role | Email | Password | Access Level |
-| :--- | :--- | :--- | :--- |
-| **CEO / Admin** | `ceo@company.com` | `admin123` | Full Access. Can view global stats, manage all employees, and approve leaves. |
-| **HR Manager** | `hr@company.com` | `admin123` | Can manage the employee directory, view HR-specific dashboards, and process leaves. |
-| **Employee** | `employee@company.com` | `password` | Can view their own profile, track personal leave balances, and submit leave requests. |
-
-*(Note: You can also use the **Sign Up** page to create new custom accounts and assign them roles via the dropdown menu!)*
+```text
+CEO Dashboard → Analytics → Employee Management → Leave Approval
+```
 
 ---
 
-## 🚀 Local Setup Steps
+# ✨ Features
 
-Follow these instructions to get both the frontend and backend running on your local machine.
+## 🔐 Authentication & RBAC
 
-### Prerequisites
-- **Node.js** (v16 or higher recommended)
-- **Java Development Kit (JDK)** (v17 or higher)
-- **MySQL Server** (running locally on port 3306)
+* JWT Authentication
+* Role-Based Access Control
+* Protected Routes
+* Secure Login System
 
-### 1. Database Configuration
-1. Open MySQL and ensure a local instance is running.
-2. The application is configured to automatically create the database if it doesn't exist (`ems_db`).
-3. If you need to change the database credentials, open `backend/src/main/resources/application.properties` and update:
-   ```ini
-   spring.datasource.username=your_username
-   spring.datasource.password=your_password
-   ```
+## 👨‍💼 Employee Management
 
-### 2. Start the Spring Boot Backend
-Open a terminal instance and navigate to the `backend` directory:
+* Add/Edit/Delete Employees
+* Department Management
+* Salary Management
+* Dynamic Employee Profiles
+
+## 📝 Leave Management
+
+* Apply Leave
+* Approve/Reject Requests
+* Leave Status Tracking
+* Leave History
+
+## 📊 Dashboards
+
+* CEO Analytics Dashboard
+* HR Management Dashboard
+* Employee Personal Dashboard
+* Department Charts & Reports
+
+## 🎨 UI/UX
+
+* Glassmorphism Design
+* Responsive Layout
+* Light/Dark Theme
+* Smooth Animations
+
+---
+
+# 🛠️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/EmployeeManagementSystem.git
+cd EmployeeManagementSystem
+```
+
+---
+
+## Backend Setup
+
 ```bash
 cd backend
 ./mvnw spring-boot:run
 ```
-*The backend server will start on `http://localhost:8080`. On the very first run, it will automatically populate the database with the default login credentials.*
 
-### 3. Start the React Frontend
-Open a **second** terminal instance and navigate to the `frontend` directory:
+Backend runs on:
+
+```text
+http://localhost:8080
+```
+
+---
+
+## Frontend Setup
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-*The Vite development server will start. Open the Local URL provided in your terminal (typically `http://localhost:5173`) in your browser to view the application.*
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
 
 ---
 
-## 📂 Project Structure
+# 🔑 Default Credentials
+
+| Role       | Email                                               | Password |
+| ---------- | --------------------------------------------------- | -------- |
+| CEO/Admin  | [ceo@company.com](mailto:ceo@company.com)           | admin123 |
+| HR Manager | [hr@company.com](mailto:hr@company.com)             | admin123 |
+| Employee   | [employee@company.com](mailto:employee@company.com) | password |
+
+---
+
+# 📂 Project Structure
 
 ```text
-EMPLOYEE MANAGEMENT SYSTEM/
-├── backend/                  # Spring Boot Application
-│   ├── .mvn/                 # Maven wrapper files
-│   ├── src/main/java/.../    # Java Source Code
-│   │   ├── config/           # Database Seeder
-│   │   ├── controller/       # REST API Endpoints (Auth, Employee, Leave, Stats)
-│   │   ├── entity/           # JPA Models (Employee, Leave)
-│   │   └── repository/       # Database Interfaces
-│   └── src/main/resources/   # App configuration (application.properties)
+EmployeeManagementSystem/
 │
-├── frontend/                 # Vite + React Application
-│   ├── src/
-│   │   ├── api/              # Axios configuration & interceptors
-│   │   ├── components/       # Reusable UI (Layout, Sidebar)
-│   │   ├── context/          # Global State (AuthContext, ThemeContext)
-│   │   ├── pages/            # Main Views (Login, Dashboard, Employees, Leaves)
-│   │   ├── App.jsx           # Routing configuration
-│   │   └── index.css         # Global Design System (Variables, Light/Dark Modes)
-│   └── package.json          # Node dependencies
+├── backend/
+│   ├── controller/
+│   ├── entity/
+│   ├── repository/
+│   └── config/
 │
-└── README.md                 # You are here!
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── api/
+│   └── App.jsx
+│
+└── README.md
 ```
+
+---
+
+# 📈 Future Enhancements
+
+* Attendance Management
+* Payroll System
+* Email Notifications
+* AI Analytics
+* Mobile App
+* AWS Deployment
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+```text
+⭐ Star the repository
+🍴 Fork the project
+🛠️ Contribute improvements
+```
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
