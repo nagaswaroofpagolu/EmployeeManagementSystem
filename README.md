@@ -1,90 +1,131 @@
-# Employee Management System (EMS)
+# 🚀 Employee Management System (EMS)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Backend-SpringBoot-green?style=for-the-badge&logo=springboot" />
-  <img src="https://img.shields.io/badge/Database-MySQL-orange?style=for-the-badge&logo=mysql" />
-  <img src="https://img.shields.io/badge/Auth-JWT-black?style=for-the-badge&logo=jsonwebtokens" />
-  <img src="https://img.shields.io/badge/Build-Vite-purple?style=for-the-badge&logo=vite" />
+
+<img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+<img src="https://img.shields.io/badge/Database-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+<img src="https://img.shields.io/badge/Auth-JWT-black?style=for-the-badge&logo=jsonwebtokens" />
+<img src="https://img.shields.io/badge/Deployment-Render-5A67D8?style=for-the-badge&logo=render&logoColor=white" />
+<img src="https://img.shields.io/badge/Hosting-Vercel-black?style=for-the-badge&logo=vercel" />
+
 </p>
+
+<h1 align="center">✨ Employee Management System ✨</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/yourusername/EmployeeManagementSystem?style=social" />
-  <img src="https://img.shields.io/github/forks/yourusername/EmployeeManagementSystem?style=social" />
-  <img src="https://img.shields.io/github/license/yourusername/EmployeeManagementSystem" />
+A modern full-stack Employee Management System with secure authentication, role-based access control, analytics dashboards, leave management, and responsive enterprise UI.
 </p>
 
 ---
 
-# ✨ Employee Management System
+# 🌐 Live Demo
 
-A modern full-stack Employee Management System with secure role-based access, interactive dashboards, leave management, analytics, and premium Glassmorphism UI design. Built using React, Spring Boot, and MySQL for scalable enterprise workforce management.
+## 💻 Frontend
 
----
-
-# 🚀 Tech Stack
-
-| Technology            | Usage              |
-| --------------------- | ------------------ |
-| ⚛️ React.js (Vite)    | Frontend UI        |
-| ☕ Spring Boot         | Backend REST APIs  |
-| 🗄️ MySQL             | Database           |
-| 🔐 JWT Authentication | Security           |
-| 📊 Recharts           | Data Visualization |
-| 🌐 Axios              | API Communication  |
+🔗 https://employee-management-system-ten-peach.vercel.app/login
 
 ---
 
-# 🖼️ Preview
+## ⚙️ Backend API
 
-```text
-CEO Dashboard → Analytics → Employee Management → Leave Approval
-```
+🔗 https://employeemanagementsystem-gfz3.onrender.com
 
 ---
 
 # ✨ Features
 
-## 🔐 Authentication & RBAC
+## 🔐 Authentication & Security
 
-* JWT Authentication
-* Role-Based Access Control
-* Protected Routes
-* Secure Login System
-
-## 👨‍💼 Employee Management
-
-* Add/Edit/Delete Employees
-* Department Management
-* Salary Management
-* Dynamic Employee Profiles
-
-## 📝 Leave Management
-
-* Apply Leave
-* Approve/Reject Requests
-* Leave Status Tracking
-* Leave History
-
-## 📊 Dashboards
-
-* CEO Analytics Dashboard
-* HR Management Dashboard
-* Employee Personal Dashboard
-* Department Charts & Reports
-
-## 🎨 UI/UX
-
-* Glassmorphism Design
-* Responsive Layout
-* Light/Dark Theme
-* Smooth Animations
+✔ JWT Authentication  
+✔ Role-Based Access Control (RBAC)  
+✔ Protected Routes  
+✔ Secure REST APIs  
+✔ Persistent Login Sessions  
 
 ---
 
-# 🛠️ Installation
+## 👨‍💼 Employee Management
 
-## Clone Repository
+✔ Add Employees  
+✔ Update Employee Details  
+✔ Delete Employees  
+✔ Department Management  
+✔ Salary Management  
+
+---
+
+## 📝 Leave Management
+
+✔ Apply Leave Requests  
+✔ Approve / Reject Leave  
+✔ Leave Tracking  
+✔ Employee Leave History  
+
+---
+
+## 📊 Dashboards & Analytics
+
+✔ Admin Dashboard  
+✔ HR Dashboard  
+✔ Employee Dashboard  
+✔ Department Analytics  
+✔ Interactive Data Visualization  
+
+---
+
+## 🎨 UI / UX
+
+✔ Modern Responsive Design  
+✔ Glassmorphism UI  
+✔ Smooth Animations  
+✔ Mobile Friendly Layout  
+✔ Clean Professional Dashboard  
+
+---
+
+# 🛠️ Tech Stack
+
+| 🚀 Technology | 📌 Purpose |
+|---|---|
+| ⚛️ React + Vite | Frontend Development |
+| ☕ Spring Boot | Backend REST APIs |
+| 🟢 Supabase PostgreSQL | Database |
+| 🔐 JWT | Authentication |
+| 🌐 Axios | API Communication |
+| ▲ Vercel | Frontend Deployment |
+| 🚀 Render | Backend Deployment |
+
+---
+
+# 📂 Project Structure
+
+```text
+EmployeeManagementSystem/
+│
+├── backend/
+│   ├── controller/
+│   ├── entity/
+│   ├── repository/
+│   ├── service/
+│   ├── security/
+│   └── config/
+│
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── services/
+│   └── App.jsx
+│
+└── README.md
+```
+
+---
+
+# ⚙️ Installation Guide
+
+## 📥 Clone Repository
 
 ```bash
 git clone https://github.com/yourusername/EmployeeManagementSystem.git
@@ -93,7 +134,7 @@ cd EmployeeManagementSystem
 
 ---
 
-## Backend Setup
+# ⚙️ Backend Setup
 
 ```bash
 cd backend
@@ -108,7 +149,7 @@ http://localhost:8080
 
 ---
 
-## Frontend Setup
+# 💻 Frontend Setup
 
 ```bash
 cd frontend
@@ -124,47 +165,65 @@ http://localhost:5173
 
 ---
 
-# 🔑 Default Credentials
+# 🔑 Environment Variables
 
-| Role       | Email                                               | Password |
-| ---------- | --------------------------------------------------- | -------- |
-| CEO/Admin  | [ceo@company.com](mailto:ceo@company.com)           | admin123 |
-| HR Manager | [hr@company.com](mailto:hr@company.com)             | admin123 |
-| Employee   | [employee@company.com](mailto:employee@company.com) | password |
+## Backend `.env`
+
+```env
+DB_URL=your_database_url
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+JWT_SECRET=your_secret_key
+```
 
 ---
 
-# 📂 Project Structure
+# 🐳 Docker Support
 
-```text
-EmployeeManagementSystem/
-│
-├── backend/
-│   ├── controller/
-│   ├── entity/
-│   ├── repository/
-│   └── config/
-│
-├── frontend/
-│   ├── components/
-│   ├── pages/
-│   ├── context/
-│   ├── api/
-│   └── App.jsx
-│
-└── README.md
+## Build Docker Image
+
+```bash
+docker build -t ems-backend .
 ```
+
+---
+
+## Run Docker Container
+
+```bash
+docker run -p 8080:8080 ems-backend
+```
+
+---
+
+# 🚀 Deployment
+
+| 🌐 Service | 🚀 Platform |
+|---|---|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | Supabase |
 
 ---
 
 # 📈 Future Enhancements
 
-* Attendance Management
-* Payroll System
-* Email Notifications
-* AI Analytics
-* Mobile App
-* AWS Deployment
+🚀 Attendance Management  
+🚀 Payroll System  
+🚀 AI Analytics Dashboard  
+🚀 Email Notifications  
+🚀 Mobile Application  
+🚀 AWS Cloud Deployment  
+
+---
+
+# 🤝 Contribution
+
+Contributions are welcome.
+
+```bash
+Fork → Clone → Create Branch → Commit → Push → Pull Request
+```
 
 ---
 
@@ -172,17 +231,18 @@ EmployeeManagementSystem/
 
 If you like this project:
 
-```text
-⭐ Star the repository
-🍴 Fork the project
-🛠️ Contribute improvements
-```
+⭐ Star the Repository  
+🍴 Fork the Project  
+🛠️ Contribute Improvements  
+
+---
+
+# 👨‍💻 Developer
+
+## ❤️ Made with passion by Naga Swaroof
 
 ---
 
 # 📜 License
 
 This project is licensed under the MIT License.
-
----
-
